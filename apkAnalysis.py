@@ -44,6 +44,7 @@ def do_upload():
     if(os.path.isfile(file_path)):
         os.remove(file_path)
     upload.save(file_path)
+    #callAnalyseApk(upload.filename)
     print "File successfully saved to '{0}'.".format(save_path)
     return callAnalyseApk(upload.filename)
 
